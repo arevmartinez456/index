@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ofertas - Tienda PC Gamers</title>
+    <link rel="stylesheet" href="../FORZEGAMER/css/estilos.css">
+    <style>
+        /* ====== ESTILOS DE OFERTAS ====== */
+
+        h2 {
+            text-align: center;
+            color: var(--cian-neon);
+            text-shadow: 0 0 8px var(--magenta-neon);
+            margin-bottom: 30px;
+        }
+
+        .ofertas-contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .oferta-card {
+            background: rgba(27, 0, 51, 0.9);
+            border: 2px solid var(--cian-neon);
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 12px var(--magenta-neon);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .oferta-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--cian-neon);
+        }
+
+        .oferta-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .oferta-card h3 {
+            color: var(--turquesa);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .oferta-card p {
+            color: var(--texto-claro);
+            font-size: 0.95em;
+        }
+
+        .oferta-descuento {
+            font-weight: bold;
+            color: var(--magenta-neon);
+            text-shadow: 0 0 6px var(--magenta-neon);
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <center> <h1 class="titulo">Ofertas Especiales</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </center>
+        </nav>
+    </header>
+
+    <main>
+        <h2>¡Descuentos imperdibles!</h2>
+
+        <div class="ofertas-contenedor">
+            <div class="oferta-card">
+                <img src="../FORZEGAMER/imagenes/pc3.png" alt="PC Gamer Ryzen 5">
+                <h3>PC Gamer Ryzen 5</h3>
+                <p class="oferta-descuento">20% de descuento</p>
+                <p>Ideal para jugar a 1080p en ultra. Incluye GPU RTX 3060, 16GB RAM y SSD de 1TB.</p>
+            </div>
+
+            <div class="oferta-card">
+                <img src="../FORZEGAMER/imagenes/monitor.png" alt="Monitor Curvo 27 pulgadas">
+                <h3>Monitor Curvo 27”</h3>
+                <p class="oferta-descuento">15% de descuento</p>
+                <p>Pantalla inmersiva Full HD con 144Hz y diseño sin bordes. Perfecto para gaming.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda ForzeGamer - Proyecto Final</p>
+    </footer>
+
+    <img src="../FORZEGAMER/imagenes/perezoso.png" alt="logo" class="imagen-esquina">
+
+</body>
+</html>
